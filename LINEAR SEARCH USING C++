@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+int lsearch(int list[],int n,int key)
+{
+    int flag=0;
+    for(int i=0;i<n;i++)
+    {
+        if(list[i]==key)
+        {
+            cout<<"the elment found at index:"<<i<<endl;
+            cout<<"the element found at pos :"<<i+1;
+            flag=1;
+            break;
+        }
+    }
+        if(flag==0)
+        {
+            cout<<"not found";
+        }
+        
+    
+}
+
+int main()
+{
+    int n,key,list[n];
+    cout<<"enter the n value:";
+    cin>>n;
+    
+    for(int i=0;i<n;i++)
+    {
+        cout<<"the elment at of arrat at : "<<i;
+        cin>>list[i];
+    }
+    cout<<"enetre the key value:";
+    cin>>key;
+    lsearch(list,n,key);
+}
